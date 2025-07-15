@@ -1,0 +1,9 @@
+body { widows:0; orphans:0; font-family:'Microsoft Sans Serif'; font-size:11pt }
+h1, h2, p { margin:0pt }
+li { margin-top:0pt; margin-bottom:0pt }
+h1 { margin:0.7pt 0pt 0pt 1pt; text-align:left; line-height:normal; widows:0; orphans:0; font-family:'Arial Black'; font-size:9pt; font-weight:normal }
+h2 { margin:0pt 0pt 0pt 59pt; text-align:left; line-height:normal; widows:0; orphans:0; font-family:'Microsoft Sans Serif'; font-size:9pt; font-weight:normal }
+.BodyText { margin:0pt; text-align:left; line-height:normal; widows:0; orphans:0; font-family:'Microsoft Sans Serif'; font-size:7pt }
+.ListParagraph { margin:4.35pt 0pt 0pt 44.95pt; text-indent:-8.95pt; text-align:left; line-height:normal; widows:0; orphans:0; font-family:'Microsoft Sans Serif'; font-size:11pt }
+.TableParagraph { margin:2.95pt 0pt 0pt 2.85pt; text-align:left; line-height:normal; widows:0; orphans:0; font-family:'Microsoft Sans Serif'; font-size:11pt }
+.TableNormal {  }
