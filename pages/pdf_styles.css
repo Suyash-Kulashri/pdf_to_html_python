@@ -1,0 +1,112 @@
+/* Setting up page size and margins to mimic A4 PDF layout */
+@page {
+    size: A4; /* 210mm x 297mm */
+    margin: 2cm; /* Standard PDF margins */
+    margin-inside: 2.5cm; /* Slightly larger for binding, if needed */
+    margin-outside: 1.5cm;
+}
+
+/* Ensure the body respects the page layout */
+body {
+    font-family: "Times New Roman", Times, serif; /* Common PDF font */
+    font-size: 12pt; /* Standard PDF font size */
+    line-height: 1.2; /* Typical line spacing in PDFs */
+    color: #000000; /* Black text for print-like appearance */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 210mm; /* A4 width */
+    max-width: 210mm;
+    margin-left: auto;
+    margin-right: auto;
+    background: #ffffff; /* White background like a PDF */
+}
+
+/* Style headings to match typical PDF document structure */
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Helvetica", Arial, sans-serif; /* Common PDF heading font */
+    font-weight: bold;
+    margin: 0.5cm 0;
+    page-break-after: avoid; /* Prevent page breaks after headings */
+}
+
+h1 {
+    font-size: 16pt;
+}
+
+h2 {
+    font-size: 14pt;
+}
+
+h3 {
+    font-size: 12pt;
+}
+
+/* Paragraph styling for consistent text flow */
+p {
+    margin: 0 0 0.5cm 0;
+    text-align: justify; /* Common in PDFs for clean text alignment */
+}
+
+/* Image styling to ensure proper sizing and placement */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0.5cm auto; /* Center images with PDF-like spacing */
+    page-break-inside: avoid; /* Prevent images from breaking across pages */
+}
+
+/* Iframe styling to match PDF appearance */
+iframe {
+    border: none;
+    margin: 0.5cm 0;
+    page-break-inside: avoid;
+    width: 100%; /* Adjust as needed */
+    min-height: 200px; /* Minimum height to ensure visibility */
+}
+
+/* Handle lists to match PDF formatting */
+ul, ol {
+    margin: 0.5cm 0;
+    padding-left: 1cm;
+}
+
+li {
+    margin-bottom: 0.2cm;
+}
+
+/* Page break control to avoid widows and orphans */
+p, li, div {
+    orphans: 3; /* Prevent single lines at the bottom of a page */
+    widows: 3; /* Prevent single lines at the top of a page */
+}
+
+/* Optional: Add page numbers in the footer */
+@page {
+    @bottom-center {
+        content: counter(page); /* Add page number */
+        font-family: "Helvetica", Arial, sans-serif;
+        font-size: 10pt;
+        color: #000000;
+    }
+}
+
+/* Print-specific media query to ensure compatibility */
+@media print {
+    body {
+        margin: 0;
+        width: 210mm;
+    }
+    img {
+        max-width: 100%;
+    }
+    iframe {
+        max-width: 100%;
+        height: auto;
+    }
+    /* Hide unnecessary elements for printing */
+    nav, footer, aside {
+        display: none;
+    }
+}
