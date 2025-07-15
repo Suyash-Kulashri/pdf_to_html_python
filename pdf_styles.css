@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 1.5;
+    margin: 40px;
+    max-width: 8.5in;
+    color: #333;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #005580;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+p {
+    margin: 5px 0;
+}
+
+strong {
+    font-weight: bold;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+ul li {
+    position: relative;
+    margin-bottom: 5px;
+}
+
+ul li:before {
+    content: "";
+    font-family: Arial, sans-serif;
+    position: absolute;
+    left: -15px;
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    font-size: 11px;
+}
+
+th {
+    background-color: #f5f5f5;
+    font-weight: bold;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
+
+.footer {
+    font-size: 10px;
+    color: #666;
+    margin-top: 20px;
+}
+
+.page-break {
+    page-break-before: always;
+}
+
+.section-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #005580;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.sub-section {
+    margin-left: 20px;
+}
+
+.signal-table th, .signal-table td {
+    text-align: center;
+}
+
+.ordering-table th, .ordering-table td {
+    vertical-align: top;
+}
+
+.efficiency-section {
+    text-align: center;
+}
+
+.efficiency-section p {
+    display: inline-block;
+    margin: 2px 10px;
+}
