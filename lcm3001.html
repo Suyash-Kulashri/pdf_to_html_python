@@ -1,0 +1,211 @@
+
+const Index = () => {
+  return (
+    <div className="min-h-screen bg-white">
+      {/* Header */}
+      <header className="bg-white border-b border-gray-200 px-8 py-4 flex justify-between items-center">
+        <div className="flex items-center space-x-4">
+          <div className="w-8 h-8 bg-blue-600 rounded"></div>
+          <h1 className="text-2xl font-bold text-blue-600">ARTESYN LCM300</h1>
+          <span className="text-gray-600">300 Watts Bulk Front End</span>
+        </div>
+        <div className="flex items-center space-x-2">
+          <div className="w-6 h-4 bg-orange-500 rounded-sm"></div>
+          <span className="font-semibold text-gray-700">Advanced Energy</span>
+        </div>
+      </header>
+
+      <div className="flex">
+        {/* Left Blue Section */}
+        <div className="w-80 bg-gradient-to-b from-blue-600 to-blue-800 text-white p-8">
+          <div className="mb-8">
+            <h2 className="text-4xl font-bold mb-2">ARTESYN LCM300</h2>
+            <p className="text-blue-100 text-lg">300 Watts Bulk Front End</p>
+          </div>
+          
+          <div className="space-y-6">
+            <div>
+              <h3 className="font-bold text-lg mb-3">SPECIAL FEATURES</h3>
+              <ul className="space-y-2 text-sm">
+                <li>• 310 W output power (360 W at 45°C for 24 V and 36 V models)</li>
+                <li>• Low cost</li>
+                <li>• 1.61" x 4.0" x 7.0"</li>
+                <li>• 1.1 W/in³</li>
+                <li>• Industrial/Medical safety</li>
+                <li>• -40°C to 70°C operating</li>
+                <li>• Optional 5 V @ 2 A housekeeping</li>
+                <li>• High efficiency: 91% @ 230 VAC</li>
+                <li>• Variable speed "Smart Fans"</li>
+                <li>• DSP controlled</li>
+                <li>• Conformal coat option</li>
+                <li>• Wide adjustment range</li>
+                <li>• Margin programming</li>
+                <li>• OR'ing FET</li>
+                <li>• PMBus compliant</li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 className="font-bold text-lg mb-3">Compliance</h3>
+              <ul className="space-y-1 text-sm">
+                <li>• EMI Class B</li>
+                <li>• EN61000 Immunity</li>
+                <li>• RoHS 3</li>
+                <li>• PMBus</li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 className="font-bold text-lg mb-3">SAFETY</h3>
+              <ul className="space-y-1 text-sm">
+                <li>• UL62368-1    1598/1433</li>
+                <li className="ml-4">60601-1 Ed.3</li>
+                <li>• CSA         62368-1</li>
+                <li>• TUV         62368-1</li>
+                <li className="ml-4">60601-1</li>
+                <li>• China CCC</li>
+                <li>• CB Scheme Report/Cert</li>
+                <li>• CE and UKCA Mark</li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="mt-8 text-xs">
+            <p>* Note: LCM300 tested according to the medical standard IEC 60601-1 2 nd Edition.</p>
+          </div>
+        </div>
+
+        {/* Right Content Section */}
+        <div className="flex-1 p-8">
+          {/* Product Image and At a Glance */}
+          <div className="flex justify-between items-start mb-8">
+            <div className="flex-1">
+              <div className="bg-gray-100 p-8 rounded-lg mb-6 flex justify-center">
+                <div className="w-80 h-40 bg-gray-300 rounded flex items-center justify-center">
+                  <span className="text-gray-600">Product Images</span>
+                </div>
+              </div>
+            </div>
+            
+            <div className="ml-8 w-64">
+              <div className="bg-gray-600 text-white text-center py-2 px-4 font-bold">
+                AT A GLANCE
+              </div>
+              <div className="border border-gray-300">
+                <div className="grid grid-cols-2 text-sm">
+                  <div className="border-b border-r border-gray-300 p-2 font-semibold bg-gray-50">Total Power</div>
+                  <div className="border-b border-gray-300 p-2">300 W</div>
+                  <div className="border-b border-r border-gray-300 p-2 font-semibold bg-gray-50">Input Voltage</div>
+                  <div className="border-b border-gray-300 p-2">85 to 264 VAC</div>
+                  <div className="border-r border-gray-300 p-2 font-semibold bg-gray-50"># of Outputs</div>
+                  <div className="p-2">Single</div>
+                </div>
+              </div>
+              
+              <div className="flex justify-center mt-4 space-x-4">
+                <div className="w-16 h-12 bg-purple-600 rounded flex items-center justify-center">
+                  <span className="text-white text-xs font-bold">PMBus</span>
+                </div>
+                <div className="w-16 h-12 bg-green-600 rounded flex items-center justify-center">
+                  <span className="text-white text-xs font-bold">RoHS</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Main Description */}
+          <div className="mb-8">
+            <p className="text-gray-700 leading-relaxed">
+              Advanced Energy's Artesyn LCM300 series provide for a very wide range of AC-DC embedded power requirement. Featuring high build quality including product screw terminals, long life, and typical full-load efficiency of greater than 91 percent, these units are ideal for use in industrial and medical applications. They are backed by comprehensive technical support and industrial and medical safety approvals and certificates. Variable-speed 'Smart Fans' draw on software controls developed by Advanced Energy to match fan speed to the unit's cooling requirement and load current. Slowing the fan not only saves power but also reduces wear, thus extending its life.
+            </p>
+          </div>
+
+          {/* Electrical Specifications Table */}
+          <div className="mb-8">
+            <div className="bg-blue-600 text-white font-bold py-3 px-4 rounded-t-lg">
+              ELECTRICAL SPECIFICATIONS
+            </div>
+            <div className="border border-gray-300 rounded-b-lg overflow-hidden">
+              <table className="w-full text-sm">
+                <tbody>
+                  <tr className="bg-gray-100">
+                    <td className="border-b border-gray-300 p-3 font-semibold">Input</td>
+                    <td className="border-b border-gray-300 p-3"></td>
+                  </tr>
+                  <tr>
+                    <td className="border-b border-gray-300 p-3">Input range</td>
+                    <td className="border-b border-gray-300 p-3">85 to 264 VAC (Operating), 110/230 VAC (Nominal), TERMINAL BLOCK</td>
+                  </tr>
+                  <tr className="bg-gray-50">
+                    <td className="border-b border-gray-300 p-3">Frequency</td>
+                    <td className="border-b border-gray-300 p-3">47 to 63 Hz, Nominal 50/60</td>
+                  </tr>
+                  <tr>
+                    <td className="border-b border-gray-300 p-3">Power rating</td>
+                    <td className="border-b border-gray-300 p-3">Internal 3 A fuses both lines fused</td>
+                  </tr>
+                  <tr className="bg-gray-50">
+                    <td className="border-b border-gray-300 p-3">Inrush current</td>
+                    <td className="border-b border-gray-300 p-3">< 30 A peak, cold start at 25°C</td>
+                  </tr>
+                  <tr>
+                    <td className="border-b border-gray-300 p-3">Power factor</td>
+                    <td className="border-b border-gray-300 p-3">0.98 typical, meets EN61000-3-2</td>
+                  </tr>
+                  <tr className="bg-gray-50">
+                    <td className="border-b border-gray-300 p-3">Harmonics</td>
+                    <td className="border-b border-gray-300 p-3">Meets IEC61000-3-2 requirements</td>
+                  </tr>
+                  <tr>
+                    <td className="border-b border-gray-300 p-3">Input current</td>
+                    <td className="border-b border-gray-300 p-3">6 Arms max input current, at 90 VAC</td>
+                  </tr>
+                  <tr className="bg-gray-50">
+                    <td className="border-b border-gray-300 p-3">Hold up time</td>
+                    <td className="border-b border-gray-300 p-3">20 ms minimum for mains 90V at full rated load</td>
+                  </tr>
+                  <tr>
+                    <td className="border-b border-gray-300 p-3">Efficiency</td>
+                    <td className="border-b border-gray-300 p-3">91% typical at full load / 240 VAC input</td>
+                  </tr>
+                  <tr className="bg-gray-50">
+                    <td className="border-b border-gray-300 p-3">Leakage current</td>
+                    <td className="border-b border-gray-300 p-3">< 0.3 mA at 240 VAC</td>
+                  </tr>
+                  <tr>
+                    <td className="border-b border-gray-300 p-3">Power line transient</td>
+                    <td className="border-b border-gray-300 p-3">MOV directly after the fuse</td>
+                  </tr>
+                  <tr className="bg-gray-50">
+                    <td className="p-3">Isolation</td>
+                    <td className="p-3">Isolation: Pri-Chassis 2500 VDC Basic<br/>Pri-Sec 3000 VAC Reinforced 2540VAC<br/>Sec-Chassis 500 VDC</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          {/* Efficiency Chart */}
+          <div className="mb-8 text-center">
+            <h3 className="font-bold text-lg mb-4">LCM300 Efficiency Without the 5 Vsb</h3>
+            <div className="bg-gray-100 p-6 rounded-lg">
+              <div className="w-full h-64 bg-white border border-gray-300 rounded flex items-center justify-center">
+                <span className="text-gray-600">Efficiency Chart Placeholder</span>
+              </div>
+            </div>
+          </div>
+
+          <div className="flex justify-between items-center text-sm text-gray-600 mt-8">
+            <span>2    advancedenergy.com</span>
+            <div className="flex items-center space-x-2">
+              <div className="w-4 h-3 bg-orange-500 rounded-sm"></div>
+              <span className="font-semibold">Advanced Energy</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Index;
